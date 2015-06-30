@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ToastView.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController{
+    IBOutlet UITextField* userVoterID;
+}
 
+- (IBAction) verifyVoter;
 
 @end
 
