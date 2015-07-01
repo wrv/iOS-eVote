@@ -8,9 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface VotingViewController : UIViewController{
+@interface VotingViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>{
     IBOutlet UILabel* curVoterID;
 }
 
+@property (nonatomic, strong) NSString* voterIDString;
+
+- (IBAction)endVotingSession;
 
 @end

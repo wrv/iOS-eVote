@@ -7,16 +7,25 @@
 //
 
 #import "VotingViewController.h"
+#import "ElectionDetailCell.h"
 
 @interface VotingViewController ()
 
 @end
 
-@implementation VotingViewController
+@implementation VotingViewController{
+    NSArray *elections;
+}
+
+@synthesize voterIDString;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    curVoterID.text = [NSString stringWithFormat:@"Beinvenidos, ID#: %@", voterIDString];
+    
+    //for testing purposes
+    elections = [NSArray arrayWithObjects:@"Egg Benedict", @"Mushroom Risotto", @"Full Breakfast", @"Hamburger", @"Ham and Egg Sandwich", @"Creme Brelee", @"White Chocolate Donut", @"Starbucks Coffee", @"Vegetable Curry", @"Instant Noodle with Egg", @"Noodle with BBQ Pork", @"Japanese Noodle with Pork", @"Green Tea", @"Thai Shrimp Cake", @"Angry Birds Cake", @"Ham and Cheese Panini", nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,6 +33,39 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [elections count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *simpleTableIdentifier = @"ElectionDetailCell";
+    
+    ElectionDetailCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    
+    if (cell == nil) {
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"ElectionDetailCell" owner:self options:nil];
+        cell = [nib objectAtIndex:0];
+    }
+    
+    cell.nameLabel.text = [elections objectAtIndex:indexPath.row];
+    cell.thumbnailImageView.image = [UIImage imageNamed:@"user1.png"];
+    cell.durationLabel.text = @"2 Months";
+    
+    return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 71;
+}
+
+- (IBAction)endVotingSession{
+    //clean up any variables
+    
+    [self performSegueWithIdentifier:@"endSession" sender:self];
+}
 /*
 #pragma mark - Navigation
 

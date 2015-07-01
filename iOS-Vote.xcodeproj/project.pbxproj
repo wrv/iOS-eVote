@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F58D6071B447C5B00E2189C /* user1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F58D6061B447C5B00E2189C /* user1.png */; };
+		3F58D60A1B44856900E2189C /* ElectionDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F58D6091B44856900E2189C /* ElectionDetailCell.m */; };
 		3F61461D1B4321B400FB43EB /* VotingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F61461C1B4321B400FB43EB /* VotingViewController.m */; };
 		3F6146201B4324F100FB43EB /* ToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F61461F1B4324F100FB43EB /* ToastView.m */; };
 		3F6146231B4327E700FB43EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F6146211B4327E700FB43EB /* Main.storyboard */; };
@@ -29,6 +31,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F58D6061B447C5B00E2189C /* user1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = user1.png; path = ../../../Downloads/user1.png; sourceTree = "<group>"; };
+		3F58D6081B44856900E2189C /* ElectionDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElectionDetailCell.h; sourceTree = "<group>"; };
+		3F58D6091B44856900E2189C /* ElectionDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ElectionDetailCell.m; sourceTree = "<group>"; };
 		3F61461B1B4321B400FB43EB /* VotingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VotingViewController.h; sourceTree = "<group>"; };
 		3F61461C1B4321B400FB43EB /* VotingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VotingViewController.m; sourceTree = "<group>"; };
 		3F61461E1B4324F100FB43EB /* ToastView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToastView.h; sourceTree = "<group>"; };
@@ -95,6 +100,8 @@
 				3F61461F1B4324F100FB43EB /* ToastView.m */,
 				3F61461B1B4321B400FB43EB /* VotingViewController.h */,
 				3F61461C1B4321B400FB43EB /* VotingViewController.m */,
+				3F58D6081B44856900E2189C /* ElectionDetailCell.h */,
+				3F58D6091B44856900E2189C /* ElectionDetailCell.m */,
 				3FB109041B41F9B20077B05E /* Images.xcassets */,
 				3F6146211B4327E700FB43EB /* Main.storyboard */,
 				3FB109061B41F9B20077B05E /* LaunchScreen.xib */,
@@ -106,6 +113,7 @@
 		3FB108F71B41F9B20077B05E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3F58D6061B447C5B00E2189C /* user1.png */,
 				3FB108F81B41F9B20077B05E /* Info.plist */,
 				3FB108F91B41F9B20077B05E /* main.m */,
 			);
@@ -209,6 +217,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F58D6071B447C5B00E2189C /* user1.png in Resources */,
 				3F6146231B4327E700FB43EB /* Main.storyboard in Resources */,
 				3FB109081B41F9B20077B05E /* LaunchScreen.xib in Resources */,
 				3FB109051B41F9B20077B05E /* Images.xcassets in Resources */,
@@ -234,6 +243,7 @@
 				3FB108FA1B41F9B20077B05E /* main.m in Sources */,
 				3F61461D1B4321B400FB43EB /* VotingViewController.m in Sources */,
 				3F6146201B4324F100FB43EB /* ToastView.m in Sources */,
+				3F58D60A1B44856900E2189C /* ElectionDetailCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
