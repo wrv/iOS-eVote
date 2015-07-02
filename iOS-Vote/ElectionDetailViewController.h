@@ -8,13 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ElectionDetailViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>{
+@interface ElectionDetailViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, UIAlertViewDelegate>{
     IBOutlet UILabel *electionName;
     IBOutlet UILabel *electionDescription;
 }
 
 @property (nonatomic, strong) NSString *electionNameString;
 
--(IBAction)castVote:(id)sender;
 
 @end

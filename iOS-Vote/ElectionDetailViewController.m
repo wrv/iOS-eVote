@@ -8,6 +8,7 @@
 
 #import "ElectionDetailViewController.h"
 #import "CandidateDetailCell.h"
+#import "ToastView.h"
 
 @interface ElectionDetailViewController ()
 
@@ -15,6 +16,7 @@
 
 @implementation ElectionDetailViewController{
     NSArray *candidates;
+    NSString *curChosenCandidate;
 }
 
 @synthesize electionNameString;
@@ -60,8 +62,26 @@
     return 71;
 }
 
--(IBAction)castVote:(id)sender{
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    curChosenCandidate =[candidates objectAtIndex:indexPath.row];
+    UIAlertView *confirmVote = [[UIAlertView alloc]
+                                 initWithTitle:@"Verification" message:[NSString stringWithFormat:@"Are you sure you want to vote for %@?",curChosenCandidate] delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:nil];
+    // Display Alert Message
+    [confirmVote addButtonWithTitle:@"Proceed"];
+    [confirmVote show];
     
+}
+
+- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex
+{
+    //NSLog(@"Button Index =%ld",buttonIndex);
+    if(buttonIndex == 1)
+    {
+        //add the voting protocol stuff here
+        [ToastView showToastInParentView:self.view withText:@"Voted!" withDuaration:1.0];
+        NSLog(@"Voted for %@ in election %@", curChosenCandidate, electionNameString);
+    }
 }
 
 /*
