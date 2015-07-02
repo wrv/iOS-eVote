@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3F58D6071B447C5B00E2189C /* user1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F58D6061B447C5B00E2189C /* user1.png */; };
+		3F07C2B41B45ADC0006230C1 /* user1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F07C2B31B45ADC0006230C1 /* user1.png */; };
+		3F07C2B61B45B014006230C1 /* mexico_640.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F07C2B51B45B014006230C1 /* mexico_640.png */; };
+		3F07C2BA1B45B19C006230C1 /* ElectionDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F07C2B91B45B19C006230C1 /* ElectionDetailViewController.m */; };
+		3F07C2BF1B45B2BE006230C1 /* CandidateDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F07C2BE1B45B2BE006230C1 /* CandidateDetailCell.m */; };
 		3F58D60A1B44856900E2189C /* ElectionDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F58D6091B44856900E2189C /* ElectionDetailCell.m */; };
 		3F61461D1B4321B400FB43EB /* VotingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F61461C1B4321B400FB43EB /* VotingViewController.m */; };
 		3F6146201B4324F100FB43EB /* ToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F61461F1B4324F100FB43EB /* ToastView.m */; };
@@ -31,7 +34,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3F58D6061B447C5B00E2189C /* user1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = user1.png; path = ../../../Downloads/user1.png; sourceTree = "<group>"; };
+		3F07C2B31B45ADC0006230C1 /* user1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user1.png; sourceTree = "<group>"; };
+		3F07C2B51B45B014006230C1 /* mexico_640.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mexico_640.png; sourceTree = "<group>"; };
+		3F07C2B81B45B19C006230C1 /* ElectionDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElectionDetailViewController.h; sourceTree = "<group>"; };
+		3F07C2B91B45B19C006230C1 /* ElectionDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ElectionDetailViewController.m; sourceTree = "<group>"; };
+		3F07C2BD1B45B2BE006230C1 /* CandidateDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CandidateDetailCell.h; sourceTree = "<group>"; };
+		3F07C2BE1B45B2BE006230C1 /* CandidateDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CandidateDetailCell.m; sourceTree = "<group>"; };
 		3F58D6081B44856900E2189C /* ElectionDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElectionDetailCell.h; sourceTree = "<group>"; };
 		3F58D6091B44856900E2189C /* ElectionDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ElectionDetailCell.m; sourceTree = "<group>"; };
 		3F61461B1B4321B400FB43EB /* VotingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VotingViewController.h; sourceTree = "<group>"; };
@@ -71,6 +79,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F07C2B21B45ADA4006230C1 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				3F07C2B51B45B014006230C1 /* mexico_640.png */,
+				3F07C2B31B45ADC0006230C1 /* user1.png */,
+			);
+			name = Media;
+			sourceTree = "<group>";
+		};
+		3F07C2B71B45B139006230C1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3F07C2B81B45B19C006230C1 /* ElectionDetailViewController.h */,
+				3F07C2B91B45B19C006230C1 /* ElectionDetailViewController.m */,
+				3F61461B1B4321B400FB43EB /* VotingViewController.h */,
+				3F61461C1B4321B400FB43EB /* VotingViewController.m */,
+				3FB108FE1B41F9B20077B05E /* ViewController.h */,
+				3FB108FF1B41F9B20077B05E /* ViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		3F07C2BB1B45B261006230C1 /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+				3F58D6081B44856900E2189C /* ElectionDetailCell.h */,
+				3F58D6091B44856900E2189C /* ElectionDetailCell.m */,
+				3F07C2BD1B45B2BE006230C1 /* CandidateDetailCell.h */,
+				3F07C2BE1B45B2BE006230C1 /* CandidateDetailCell.m */,
+			);
+			name = TableCells;
+			sourceTree = "<group>";
+		};
+		3F07C2BC1B45B288006230C1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3F61461E1B4324F100FB43EB /* ToastView.h */,
+				3F61461F1B4324F100FB43EB /* ToastView.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		3FB108EB1B41F9B20077B05E = {
 			isa = PBXGroup;
 			children = (
@@ -92,16 +142,12 @@
 		3FB108F61B41F9B20077B05E /* iOS-Vote */ = {
 			isa = PBXGroup;
 			children = (
+				3F07C2BC1B45B288006230C1 /* Models */,
+				3F07C2BB1B45B261006230C1 /* TableCells */,
+				3F07C2B71B45B139006230C1 /* Controllers */,
+				3F07C2B21B45ADA4006230C1 /* Media */,
 				3FB108FB1B41F9B20077B05E /* AppDelegate.h */,
 				3FB108FC1B41F9B20077B05E /* AppDelegate.m */,
-				3FB108FE1B41F9B20077B05E /* ViewController.h */,
-				3FB108FF1B41F9B20077B05E /* ViewController.m */,
-				3F61461E1B4324F100FB43EB /* ToastView.h */,
-				3F61461F1B4324F100FB43EB /* ToastView.m */,
-				3F61461B1B4321B400FB43EB /* VotingViewController.h */,
-				3F61461C1B4321B400FB43EB /* VotingViewController.m */,
-				3F58D6081B44856900E2189C /* ElectionDetailCell.h */,
-				3F58D6091B44856900E2189C /* ElectionDetailCell.m */,
 				3FB109041B41F9B20077B05E /* Images.xcassets */,
 				3F6146211B4327E700FB43EB /* Main.storyboard */,
 				3FB109061B41F9B20077B05E /* LaunchScreen.xib */,
@@ -113,7 +159,6 @@
 		3FB108F71B41F9B20077B05E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				3F58D6061B447C5B00E2189C /* user1.png */,
 				3FB108F81B41F9B20077B05E /* Info.plist */,
 				3FB108F91B41F9B20077B05E /* main.m */,
 			);
@@ -217,10 +262,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F58D6071B447C5B00E2189C /* user1.png in Resources */,
+				3F07C2B41B45ADC0006230C1 /* user1.png in Resources */,
 				3F6146231B4327E700FB43EB /* Main.storyboard in Resources */,
 				3FB109081B41F9B20077B05E /* LaunchScreen.xib in Resources */,
 				3FB109051B41F9B20077B05E /* Images.xcassets in Resources */,
+				3F07C2B61B45B014006230C1 /* mexico_640.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,10 +284,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F07C2BF1B45B2BE006230C1 /* CandidateDetailCell.m in Sources */,
 				3FB109001B41F9B20077B05E /* ViewController.m in Sources */,
 				3FB108FD1B41F9B20077B05E /* AppDelegate.m in Sources */,
 				3FB108FA1B41F9B20077B05E /* main.m in Sources */,
 				3F61461D1B4321B400FB43EB /* VotingViewController.m in Sources */,
+				3F07C2BA1B45B19C006230C1 /* ElectionDetailViewController.m in Sources */,
 				3F6146201B4324F100FB43EB /* ToastView.m in Sources */,
 				3F58D60A1B44856900E2189C /* ElectionDetailCell.m in Sources */,
 			);

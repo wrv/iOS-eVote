@@ -8,6 +8,7 @@
 
 #import "VotingViewController.h"
 #import "ElectionDetailCell.h"
+#import "ElectionDetailViewController.h"
 
 @interface VotingViewController ()
 
@@ -50,7 +51,7 @@
     }
     
     cell.nameLabel.text = [elections objectAtIndex:indexPath.row];
-    cell.thumbnailImageView.image = [UIImage imageNamed:@"user1.png"];
+    cell.thumbnailImageView.image = [UIImage imageNamed:@"mexico_640.png"];
     cell.durationLabel.text = @"2 Months";
     
     return cell;
@@ -59,6 +60,14 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 71;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"electionDetailSegue"]) {
+        NSIndexPath *indexPath = [currentTableView indexPathForSelectedRow];
+        ElectionDetailViewController *destViewController = segue.destinationViewController;
+        destViewController.electionNameString = [elections objectAtIndex:indexPath.row];
+    }
 }
 
 - (IBAction)endVotingSession{

@@ -10,6 +10,7 @@
 
 @interface VotingViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>{
     IBOutlet UILabel* curVoterID;
+    IBOutlet UITableView *currentTableView;
 }
 
 @property (nonatomic, strong) NSString* voterIDString;
