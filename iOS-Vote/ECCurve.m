@@ -20,10 +20,10 @@
 	mpz_init(throwaway);
 
 	mpz_pow_ui(throwaway, self.b, 2);
-	mpz_mul_si(throwaway, throwaway, 27)
+    mpz_mul_si(throwaway, throwaway, 27);
 	mpz_mul_si(self.discriminant,throwaway, 16);
 
-	if self.isSmooth() == 0{
+	if (self.isSmooth() == 0){
 		NSLog(@"Curve parameters are not smooth");
 	}
 
@@ -45,10 +45,11 @@
 	return lhs == rhs;
 }
 
-- (NSString) toString{
+- (NSString*) toString{
+    NSString* dat
 	return [[NSString alloc] stringWithFormat:@"y^2 = x^3 + %@",self.b];
 }
-- (int) Equal: (ECCurve) other{
+- (int) Equal: (ECCurve*) other{
 
 	return mpz_cmp(self.b, other.b);
 }

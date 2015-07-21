@@ -15,14 +15,14 @@
 
 @interface ECCurve : NSObject
 
-@property (nonatomic, strong) mpz_t * b; 
-@property (nonatomic, strong) mpz_t * discriminant;
+@property (nonatomic) mpz_t * b;
+@property (nonatomic) mpz_t * discriminant;
 
 - (id) initWithB: (mpz_t) bVal;
 - (int) isSmooth;
 - (bool) testPoint: (mpz_t) x
 			  yVal: (mpz_t) y;
-- (NSString) toString;
-- (int) Equal: (ECCurve) other;
+- (NSString*) toString;
+- (int) Equal: (ECCurve*) other;
 
 @end

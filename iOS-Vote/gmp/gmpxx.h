@@ -32,12 +32,15 @@ along with the GNU MP Library.  If not, see http://www.gnu.org/licenses/.  */
 #ifndef __GMP_PLUSPLUS__
 #define __GMP_PLUSPLUS__
 
+#ifdef __cplus
 #include <iosfwd>
-
 #include <cstring>  /* for strlen */
+
 #include <string>
+
 #include <stdexcept>
 #include <cfloat>
+
 #include "gmp.h"
 
 
@@ -3385,4 +3388,5 @@ public:
 #undef __GMPQ_DEFINE_INCREMENT_OPERATOR
 #undef __GMPF_DEFINE_INCREMENT_OPERATOR
 
+#endif /* __cplusplus__ */
 #endif /* __GMP_PLUSPLUS__ */

@@ -15,9 +15,9 @@
 
 @interface ECPoint : NSObject
 
-@property (nonatomic, strong) mpz_t *x;
-@property (nonatomic, strong) mpz_t *y;
-@property (nonatomic, strong) ECCurve * curve;
+@property (nonatomic) mpz_t *x;
+@property (nonatomic) mpz_t *y;
+@property (nonatomic) ECCurve * curve;
 
 - (id) initWithXY: (mpz_t *) x
 			 yVal: (mpz_t *) y
