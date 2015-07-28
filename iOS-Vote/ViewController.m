@@ -8,9 +8,9 @@
 
 #import "ViewController.h"
 #import "VotingViewController.h"
-#import "ECCurve.h"
-#import "ECGroup.h"
-#import "ECPoint.h"
+#import "GMPInt.h"
+#import "gmp.h"
+#import "libs/bn.h"
 
 @interface ViewController ()
 

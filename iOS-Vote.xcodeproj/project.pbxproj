@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F01416B1B6842E10026FE42 /* AteWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F01416A1B6842E10026FE42 /* AteWrapper.m */; };
 		3F07C2B41B45ADC0006230C1 /* user1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F07C2B31B45ADC0006230C1 /* user1.png */; };
 		3F07C2B61B45B014006230C1 /* mexico_640.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F07C2B51B45B014006230C1 /* mexico_640.png */; };
 		3F07C2BA1B45B19C006230C1 /* ElectionDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F07C2B91B45B19C006230C1 /* ElectionDetailViewController.m */; };
@@ -15,16 +16,16 @@
 		3F61461D1B4321B400FB43EB /* VotingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F61461C1B4321B400FB43EB /* VotingViewController.m */; };
 		3F6146201B4324F100FB43EB /* ToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F61461F1B4324F100FB43EB /* ToastView.m */; };
 		3F6146231B4327E700FB43EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F6146211B4327E700FB43EB /* Main.storyboard */; };
+		3F62C2211B6821EC00F572BD /* GMPInt.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F62C2201B6821EC00F572BD /* GMPInt.m */; };
+		3F62C2311B68222700F572BD /* libgmp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F62C22B1B68222700F572BD /* libgmp.a */; };
+		3F62C2321B68222700F572BD /* libgmpxx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F62C22C1B68222700F572BD /* libgmpxx.a */; };
+		3F62C2331B68222700F572BD /* libAte.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F62C22D1B68222700F572BD /* libAte.a */; };
 		3FB108FA1B41F9B20077B05E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB108F91B41F9B20077B05E /* main.m */; };
 		3FB108FD1B41F9B20077B05E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB108FC1B41F9B20077B05E /* AppDelegate.m */; };
 		3FB109001B41F9B20077B05E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB108FF1B41F9B20077B05E /* ViewController.m */; };
 		3FB109051B41F9B20077B05E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FB109041B41F9B20077B05E /* Images.xcassets */; };
 		3FB109081B41F9B20077B05E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FB109061B41F9B20077B05E /* LaunchScreen.xib */; };
 		3FB109141B41F9B30077B05E /* iOS_VoteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB109131B41F9B30077B05E /* iOS_VoteTests.m */; };
-		3FBE2D921B4F2A9100856F24 /* ECCurve.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBE2D911B4F2A9100856F24 /* ECCurve.m */; };
-		3FBE2D951B4F2AAA00856F24 /* ECGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBE2D941B4F2AAA00856F24 /* ECGroup.m */; };
-		3FBE2D9B1B4F2B8000856F24 /* libgmp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FBE2D991B4F2B8000856F24 /* libgmp.a */; };
-		3FBE2D9C1B4F2B8000856F24 /* libgmpxx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FBE2D9A1B4F2B8000856F24 /* libgmpxx.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F01416A1B6842E10026FE42 /* AteWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AteWrapper.m; sourceTree = "<group>"; };
 		3F07C2B31B45ADC0006230C1 /* user1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user1.png; sourceTree = "<group>"; };
 		3F07C2B51B45B014006230C1 /* mexico_640.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mexico_640.png; sourceTree = "<group>"; };
 		3F07C2B81B45B19C006230C1 /* ElectionDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElectionDetailViewController.h; sourceTree = "<group>"; };
@@ -51,6 +53,16 @@
 		3F61461E1B4324F100FB43EB /* ToastView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToastView.h; sourceTree = "<group>"; };
 		3F61461F1B4324F100FB43EB /* ToastView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToastView.m; sourceTree = "<group>"; };
 		3F6146221B4327E700FB43EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3F62C21F1B6821EC00F572BD /* GMPInt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMPInt.h; sourceTree = "<group>"; };
+		3F62C2201B6821EC00F572BD /* GMPInt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMPInt.m; sourceTree = "<group>"; };
+		3F62C2291B68222700F572BD /* gmp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gmp.h; sourceTree = "<group>"; };
+		3F62C22A1B68222700F572BD /* gmpxx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gmpxx.h; sourceTree = "<group>"; };
+		3F62C22B1B68222700F572BD /* libgmp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgmp.a; sourceTree = "<group>"; };
+		3F62C22C1B68222700F572BD /* libgmpxx.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgmpxx.a; sourceTree = "<group>"; };
+		3F62C22D1B68222700F572BD /* libAte.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAte.a; sourceTree = "<group>"; };
+		3F62C2351B68286300F572BD /* bn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bn.h; sourceTree = "<group>"; };
+		3F62C2361B6828BC00F572BD /* zm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zm.h; sourceTree = "<group>"; };
+		3F62C2371B6828BC00F572BD /* zm2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zm2.h; sourceTree = "<group>"; };
 		3FB108F41B41F9B20077B05E /* iOS-Vote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Vote.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FB108F81B41F9B20077B05E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FB108F91B41F9B20077B05E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -63,14 +75,6 @@
 		3FB1090D1B41F9B30077B05E /* iOS-VoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-VoteTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FB109121B41F9B30077B05E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FB109131B41F9B30077B05E /* iOS_VoteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_VoteTests.m; sourceTree = "<group>"; };
-		3FBE2D901B4F2A9100856F24 /* ECCurve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECCurve.h; sourceTree = "<group>"; };
-		3FBE2D911B4F2A9100856F24 /* ECCurve.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECCurve.m; sourceTree = "<group>"; };
-		3FBE2D931B4F2AAA00856F24 /* ECGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECGroup.h; sourceTree = "<group>"; };
-		3FBE2D941B4F2AAA00856F24 /* ECGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECGroup.m; sourceTree = "<group>"; };
-		3FBE2D971B4F2B8000856F24 /* gmp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gmp.h; sourceTree = "<group>"; };
-		3FBE2D981B4F2B8000856F24 /* gmpxx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gmpxx.h; sourceTree = "<group>"; };
-		3FBE2D991B4F2B8000856F24 /* libgmp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgmp.a; sourceTree = "<group>"; };
-		3FBE2D9A1B4F2B8000856F24 /* libgmpxx.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgmpxx.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +82,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FBE2D9C1B4F2B8000856F24 /* libgmpxx.a in Frameworks */,
-				3FBE2D9B1B4F2B8000856F24 /* libgmp.a in Frameworks */,
+				3F62C2331B68222700F572BD /* libAte.a in Frameworks */,
+				3F62C2321B68222700F572BD /* libgmpxx.a in Frameworks */,
+				3F62C2311B68222700F572BD /* libgmp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,14 +134,44 @@
 		3F07C2BC1B45B288006230C1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				3F62C2201B6821EC00F572BD /* GMPInt.m */,
+				3F62C21F1B6821EC00F572BD /* GMPInt.h */,
+				3F01416A1B6842E10026FE42 /* AteWrapper.m */,
 				3F61461E1B4324F100FB43EB /* ToastView.h */,
 				3F61461F1B4324F100FB43EB /* ToastView.m */,
-				3FBE2D901B4F2A9100856F24 /* ECCurve.h */,
-				3FBE2D911B4F2A9100856F24 /* ECCurve.m */,
-				3FBE2D931B4F2AAA00856F24 /* ECGroup.h */,
-				3FBE2D941B4F2AAA00856F24 /* ECGroup.m */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		3F62C2221B68222700F572BD /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				3F62C2341B68281200F572BD /* libAte */,
+				3F62C2231B68222700F572BD /* gmp */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		3F62C2231B68222700F572BD /* gmp */ = {
+			isa = PBXGroup;
+			children = (
+				3F62C2291B68222700F572BD /* gmp.h */,
+				3F62C22A1B68222700F572BD /* gmpxx.h */,
+				3F62C22B1B68222700F572BD /* libgmp.a */,
+				3F62C22C1B68222700F572BD /* libgmpxx.a */,
+			);
+			path = gmp;
+			sourceTree = "<group>";
+		};
+		3F62C2341B68281200F572BD /* libAte */ = {
+			isa = PBXGroup;
+			children = (
+				3F62C2361B6828BC00F572BD /* zm.h */,
+				3F62C2371B6828BC00F572BD /* zm2.h */,
+				3F62C2351B68286300F572BD /* bn.h */,
+				3F62C22D1B68222700F572BD /* libAte.a */,
+			);
+			name = libAte;
 			sourceTree = "<group>";
 		};
 		3FB108EB1B41F9B20077B05E = {
@@ -160,7 +195,7 @@
 		3FB108F61B41F9B20077B05E /* iOS-Vote */ = {
 			isa = PBXGroup;
 			children = (
-				3FBE2D961B4F2B8000856F24 /* gmp */,
+				3F62C2221B68222700F572BD /* libs */,
 				3F07C2BC1B45B288006230C1 /* Models */,
 				3F07C2BB1B45B261006230C1 /* TableCells */,
 				3F07C2B71B45B139006230C1 /* Controllers */,
@@ -199,17 +234,6 @@
 				3FB109121B41F9B30077B05E /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		3FBE2D961B4F2B8000856F24 /* gmp */ = {
-			isa = PBXGroup;
-			children = (
-				3FBE2D971B4F2B8000856F24 /* gmp.h */,
-				3FBE2D981B4F2B8000856F24 /* gmpxx.h */,
-				3FBE2D991B4F2B8000856F24 /* libgmp.a */,
-				3FBE2D9A1B4F2B8000856F24 /* libgmpxx.a */,
-			);
-			path = gmp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,12 +339,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F07C2BF1B45B2BE006230C1 /* CandidateDetailCell.m in Sources */,
-				3FBE2D921B4F2A9100856F24 /* ECCurve.m in Sources */,
 				3FB109001B41F9B20077B05E /* ViewController.m in Sources */,
-				3FBE2D951B4F2AAA00856F24 /* ECGroup.m in Sources */,
 				3FB108FD1B41F9B20077B05E /* AppDelegate.m in Sources */,
 				3FB108FA1B41F9B20077B05E /* main.m in Sources */,
 				3F61461D1B4321B400FB43EB /* VotingViewController.m in Sources */,
+				3F62C2211B6821EC00F572BD /* GMPInt.m in Sources */,
+				3F01416B1B6842E10026FE42 /* AteWrapper.m in Sources */,
 				3F07C2BA1B45B19C006230C1 /* ElectionDetailViewController.m in Sources */,
 				3F6146201B4324F100FB43EB /* ToastView.m in Sources */,
 				3F58D60A1B44856900E2189C /* ElectionDetailCell.m in Sources */,
@@ -385,8 +409,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_INPUT_FILETYPE = automatic;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -399,9 +425,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/,
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -428,15 +459,22 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_INPUT_FILETYPE = automatic;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/,
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -452,6 +490,8 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/iOS-Vote/gmp",
+					"$(PROJECT_DIR)/iOS-Vote/libs/gmp",
+					"$(PROJECT_DIR)/iOS-Vote/libs",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -466,6 +506,8 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/iOS-Vote/gmp",
+					"$(PROJECT_DIR)/iOS-Vote/libs/gmp",
+					"$(PROJECT_DIR)/iOS-Vote/libs",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
