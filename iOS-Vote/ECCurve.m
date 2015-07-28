@@ -46,8 +46,8 @@
 }
 
 - (NSString*) toString{
-    NSString* dat
-	return [[NSString alloc] stringWithFormat:@"y^2 = x^3 + %@",self.b];
+    NSString* datString = [[NSString alloc] stringWithFormat:@"y^2 = x^3 + %@",self.b];
+	return datString;
 }
 - (int) Equal: (ECCurve*) other{
 
